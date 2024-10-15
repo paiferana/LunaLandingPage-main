@@ -1,0 +1,238 @@
+.main__title {
+    font-family: 'Avelire', sans-serif; 
+    font-size: 3rem; 
+    color: #333; 
+    text-align: center; 
+    margin: 20px 0; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    font-weight: 700; 
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #f4f4f4; 
+}
+
+.conteiner {
+    background-color: #C0DED7;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 40px; 
+    max-width: 1700px; 
+    margin: auto; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.image-container {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+}
+
+.image-container img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.text-container {
+    flex: 2; 
+    padding: 0 20px; 
+}
+
+.text-container p {
+    margin: 10px 0; 
+    color: #333; 
+}
+
+/* Estilo do botão-link */
+a.btn__main, 
+#form-container .btn__main {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #5f6469;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+a.btn__main:hover, 
+#form-container .btn__main:hover {
+    background-color: #C0DED7;
+    color: #1e1f20;
+}
+
+a.btn__main:focus, 
+#form-container .btn__main:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(95, 100, 105, 0.5);
+}
+
+#about-us {
+  background-color: #fff;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  padding: 40px; 
+  max-width: 1700px; 
+  margin: auto; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about-us .image-container {
+  flex: 1; 
+    display: flex;
+    justify-content: center; 
+}
+
+#about-us .image-container img {
+  max-width: 10px; /* Definindo um tamanho máximo para a imagem */
+  height: auto; 
+  border-radius: 20px; 
+}
+
+#about-us .text-container {
+  flex: 2; 
+  padding: 40px; 
+}
+
+#about-us h2 {
+  font-family: 'Avelire', sans-serif; 
+  font-size: 2rem; 
+  color: #333; 
+  margin: 0 20px; 
+}
+
+#about-us p {
+  margin: 10px 0; 
+  color: #333; 
+  line-height: 1.6; /* Aumentando o espaçamento entre linhas */
+}
+
+#form-container {
+  background-color: #C0DED7;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centralizando o conteúdo do formulário */
+}
+
+#form-container h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Estilo para os labels e inputs */
+#form-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: left;
+}
+
+#form-container input,
+#form-container select {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#form-container input:focus,
+#form-container select:focus {
+  outline: none;
+  border-color: #5f6469;
+  box-shadow: 0 0 5px rgba(95, 100, 105, 0.5);
+}
+
+/* Estilo para o botão de enviar */
+#form-container .btn__main {
+  background-color: #5f6469;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#form-container .btn__main:hover {
+  background-color: #C0DED7;
+  color: #1e1f20;
+}
+
+#form-container .btn__main:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(95, 100, 105, 0.5);
+}
+
+.team {
+    display: flex;           
+    justify-content: center;  
+    gap: 20px;               
+}
+
+.member {
+    position: relative; 
+}
+
+.dev {
+    width: 80px;            
+    height: 80px;           
+    border-radius: 50%;      
+    object-fit: cover; 
+    opacity: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.dev:hover {
+    transform: scale(1.1);
+    opacity: 0.4;
+}
+
+.name {
+    position: absolute; 
+    bottom: 18px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    color: #008080	; 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 20px; 
+    font-weight: bold; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.member:hover .name {
+    opacity: 1; 
+}
+
+  .title {
+    display: flex; 
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+  

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Avelire:wght@400;700&display=swap" rel="stylesheet">
+    <title>Luna</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="main__title">LUNA</h1>
+        </nav>
+    </header>
+    <section class="conteiner">
+    <div class="image-container">
+        <img src="assets/woman.png" alt="foto de mulher fazendo musculação">
+    </div>
+    <div class="text-container">
+        <p>Treine de forma inteligente e adequada ao seu ciclo menstrual.</p>
+        <p>O Luna é personalizado para ajustar seus exercícios às fases do seu ciclo menstrual.</p>
+        <p>Vamos melhorar seu desempenho, evitar lesões e alcançar melhores resultados, <br>tudo enquanto se conecta mais com o seu corpo!</p>
+    
+        <a href="#form-container" class="btn__main">REGISTRE-SE AGORA</a> <!-- Link que leva ao formulário -->
+        <a href="#about-us" class="btn__main">SOBRE NÓS</a> 
+    </div>
+
+</section>
+<!-- Seção "Sobre Nós" -->
+<section id="about-us">
+    <div class="img">
+        <img src="assets/Luna - LOGO.png" alt="Luna">
+    </div>
+    <p>
+        Somos um time de mulheres dedicadas a criar soluções que melhoram <br> a experiência de treinamento.
+        Compreendemos a importância de alinhar exercícios <br> às fases do ciclo menstrual,promovendo saúde e bem-estar. <br>
+        Nosso objetivo é ajudar você a se conectar melhor com o seu corpo,<br> evitando lesões e maximizando seus resultados. <br>
+        Junte-se a nós nessa jornada de autoconhecimento e empoderamento!
+    </p>
+</section>
+
+
+<section id="form-container">
+    <h2>Registre-se agora</h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" class="btn__main">Registrar</button>
+    </form>
+</section>
+
+    
+    <footer>
+        <h1 class="title">Um time de mulher para mulher, conheça o Innovatrix:</h1>
+        <section class="team">
+            <div class="member">
+                <img class="dev" src="assets/anajulia.jpeg" alt="Ana Julia">
+                <div class="name">Ana Julia</div>
+            </div>
+            <div class="member">
+                <img class="dev" src="assets/brenda.jpeg" alt="Brenda">
+                <div class="name">Brenda</div>
+            </div>
+            <div class="member">
+                <img class="dev" src="assets/kesia.jpeg" alt="Kesia">
+                <div class="name">Kesia</div>
+            </div>
+            <div class="member">
+                <img class="dev" src="assets/milene.jpeg" alt="Milene">
+                <div class="name">Milene</div>
+            </div>
+            <div class="member">
+                <img class="dev" src="assets/sarah.jpeg" alt="Sarah">
+                <div class="name">Sarah</div>
+            </div>
+        </section>
+    </footer>
+    
+    
+</body>
+</html>
